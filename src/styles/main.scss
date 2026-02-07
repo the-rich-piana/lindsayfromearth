@@ -1,0 +1,234 @@
+// Import custom variables first
+@import '_custom';
+
+// Import Bulma
+@import 'bulma/bulma.sass';
+
+// Global Styles
+body {
+  font-family: $family-primary;
+  font-weight: $weight-light;
+  color: $text;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $family-secondary;
+  font-weight: $weight-medium;
+  color: $deep-earth;
+}
+
+// Hero Section
+.hero {
+  background: linear-gradient(135deg, rgba(156, 175, 136, 0.15) 0%, rgba(232, 180, 160, 0.15) 100%);
+
+  &.is-fullheight {
+    min-height: 100vh;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    font-weight: $weight-medium;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: $weight-light;
+    color: $deep-earth;
+    opacity: 0.9;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// Section Styles
+.section {
+  padding: $section-padding-medium;
+
+  &.has-background-white {
+    background-color: white;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: $primary;
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
+  }
+}
+
+// Card Styles
+.card {
+  border-radius: $radius;
+  box-shadow: $card-shadow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(90, 74, 66, 0.15);
+  }
+
+  .card-image {
+    padding: 2rem 2rem 0;
+
+    .icon {
+      font-size: 3rem;
+      color: $primary;
+    }
+  }
+
+  .card-content {
+    padding: $card-content-padding;
+
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: left;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+// Button Styles
+.button {
+  border-radius: $radius;
+  font-weight: $weight-normal;
+  transition: all 0.3s ease;
+
+  &.is-primary {
+    &:hover {
+      background-color: darken($primary, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(156, 175, 136, 0.3);
+    }
+  }
+
+  &.is-large {
+    font-size: 1.25rem;
+    padding: $button-padding-vertical $button-padding-horizontal;
+  }
+}
+
+// Navbar Styles
+.navbar {
+  background-color: $navbar-background-color;
+  box-shadow: 0 2px 8px rgba(90, 74, 66, 0.05);
+
+  .navbar-brand {
+    .navbar-item {
+      font-family: $family-secondary;
+      font-weight: $weight-medium;
+      font-size: 1.25rem;
+      color: $deep-earth;
+    }
+  }
+
+  .navbar-menu {
+    .navbar-item {
+      font-weight: $weight-normal;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .navbar-burger {
+    color: $deep-earth;
+  }
+}
+
+// Footer Styles
+.footer {
+  background-color: $footer-background-color;
+  color: $footer-color;
+  padding: $footer-padding;
+
+  a {
+    color: $warm-cream;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .icon {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+// Content Styles
+.content {
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .image {
+    border-radius: $radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+  }
+}
+
+// Contact Section
+.contact-info {
+  .icon {
+    color: $primary;
+    margin-right: 0.75rem;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Animation for fade-in effect
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}

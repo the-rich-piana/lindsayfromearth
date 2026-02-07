@@ -1,0 +1,57 @@
+// Color Palette - Warm, gentle, earthy tones
+$sage-green: #9caf88;
+$soft-terracotta: #e8b4a0;
+$warm-cream: #f5f1e8;
+$deep-earth: #5a4a42;
+
+// Bulma Variable Overrides
+$primary: $sage-green;
+$link: $sage-green;
+$info: $soft-terracotta;
+$body-background-color: $warm-cream;
+$text: $deep-earth;
+$text-strong: $deep-earth;
+
+// Typography
+$family-primary: 'Open Sans', sans-serif;
+$family-secondary: 'Lora', serif;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+
+// Borders and Shadows
+$radius: 12px;
+$radius-small: 8px;
+$radius-large: 16px;
+$shadow: 0 4px 6px rgba(90, 74, 66, 0.1);
+
+// Spacing
+$section-padding: 3rem 1.5rem;
+$section-padding-medium: 4rem 1.5rem;
+$section-padding-large: 5rem 1.5rem;
+
+// Button customization
+$button-border-width: 2px;
+$button-padding-vertical: 0.75rem;
+$button-padding-horizontal: 1.5rem;
+
+// Navbar
+$navbar-background-color: $warm-cream;
+$navbar-item-color: $deep-earth;
+$navbar-item-hover-color: $primary;
+$navbar-item-hover-background-color: transparent;
+
+// Footer
+$footer-background-color: $deep-earth;
+$footer-color: $warm-cream;
+$footer-padding: 3rem 1.5rem;
+
+// Card
+$card-shadow: 0 4px 12px rgba(90, 74, 66, 0.08);
+$card-background-color: white;
+$card-content-padding: 1.5rem;
+
+// Hero
+$hero-body-padding: 3rem 1.5rem;
+$hero-body-padding-medium: 6rem 1.5rem;
+$hero-body-padding-large: 8rem 1.5rem;
