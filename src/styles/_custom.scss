@@ -1,16 +1,16 @@
 // Color Palette - Warm, gentle, earthy tones
-$sage-green: #9caf88;
+$soft-blue: #bdd3e7;
 $soft-terracotta: #e8b4a0;
-$warm-cream: #f5f1e8;
-$deep-earth: #5a4a42;
+$warm-cream: #f0fcff;
+$deep-blue: #424e5a;
 
 // Bulma Variable Overrides
-$primary: $sage-green;
-$link: $sage-green;
+$primary: $soft-blue;
+$link: $soft-blue;
 $info: $soft-terracotta;
 $body-background-color: $warm-cream;
-$text: $deep-earth;
-$text-strong: $deep-earth;
+$text: $deep-blue;
+$text-strong: $deep-blue;
 
 // Typography
 $family-primary: 'Open Sans', sans-serif;
@@ -37,12 +37,12 @@ $button-padding-horizontal: 1.5rem;
 
 // Navbar
 $navbar-background-color: $warm-cream;
-$navbar-item-color: $deep-earth;
+$navbar-item-color: $deep-blue;
 $navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
 
 // Footer
-$footer-background-color: $deep-earth;
+$footer-background-color: $deep-blue;
 $footer-color: $warm-cream;
 $footer-padding: 3rem 1.5rem;
 
